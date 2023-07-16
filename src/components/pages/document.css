@@ -1,0 +1,27 @@
+.custom-radio input[type='radio'] {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  
+  .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #4f93ce !important;
+  }
+  
+  .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  
+  .custom-radio .custom-control-input:checked ~ .custom-control-label::before,
+  .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+    border: 2px solid #4f93ce;
+  }
+  
